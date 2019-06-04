@@ -23,7 +23,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 6F6B15509CF8E59E6E469F327F43
 # Install the packages we want ;)
 RUN apt-get update && apt-get install -y \
     lsb \
-    puppet-agent \
     pdk \
     yamllint
 
