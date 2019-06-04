@@ -15,10 +15,11 @@ ENV LANG en_US.utf8
 
 # Add the puppetlabs repository
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 6F6B15509CF8E59E6E469F327F438280EF8D349F \
-    && echo "deb http://apt.puppetlabs.com stretch main" > /etc/apt/sources.list.d/puppetlabs..list
+    && echo "deb http://apt.puppetlabs.com stretch main" > /etc/apt/sources.list.d/puppetlabs.list
+    
 
 # Install the packages we want ;)
-RUN apt-get install -y \
+RUN apt-get update && apt-get install -y \
     lsb \
     puppet-agent \
     pdk \
