@@ -8,7 +8,8 @@ FROM debian:stretch-slim
 # Make sure we have some basic packages needed later
 RUN apt-get update && apt-get install -y \
     locales \
-    gnupg
+    gnupg \
+    wget
 
 # Make en_US.UTF-8 the default locale
 ENV LANG en_US.utf8
