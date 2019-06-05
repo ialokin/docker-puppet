@@ -9,7 +9,8 @@ FROM debian:stretch-slim
 RUN apt-get update && apt-get install -y \
     locales \
     gnupg \
-    wget
+    wget \
+    && rm -rf /var/lib/apt/lists/*
 
 # Make en_US.UTF-8 the default locale
 ENV LANG en_US.utf8
@@ -26,7 +27,5 @@ RUN wget -O /tmp/puppet-release-stretch.deb http://apt.puppetlabs.com/puppet-rel
 RUN apt-get update && apt-get install -y \
     lsb \
     pdk \
-    yamllint
-
-# Cleanup
-RUN rm -rf /var/lib/apt/lists/*
+    yamllint \
+    && rm -rf /var/lib/apt/lists/*
