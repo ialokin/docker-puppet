@@ -23,5 +23,6 @@ RUN wget -O /tmp/puppet-release-stretch.deb http://apt.puppetlabs.com/puppet-rel
     lsb \
     pdk \
     yamllint \
-    && /opt/puppetlabs/puppet/bin/gem install r10k \
     && rm -rf /var/lib/apt/lists/*
+
+RUN /opt/puppetlabs/puppet/bin/gem install r10k \
