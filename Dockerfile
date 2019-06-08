@@ -1,9 +1,9 @@
-# docker-puppet
+# docker-puppet:slim
 #
 # Version:     v0.1
 # Project URL: https://github.com/ialokin/docker-puppet
 
-FROM debian:stretch-slim
+FROM ruby:2.5-stretch
 
 # Make sure we have some basic packages needed later
 RUN apt-get update && apt-get install -y \
