@@ -7,6 +7,7 @@ FROM ruby:2.5-slim-stretch
 
 RUN apt-get update && apt-get install -y \
     build-essential \
+    python3-setuptools \
     yamllint \
     && rm -rf /var/lib/apt/lists/* \
     && gem install \
