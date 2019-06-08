@@ -2,11 +2,11 @@
 
 Docker images written to aid in testing puppet environments and/or modules.
 
-**Important note:** *In order to make the image as small as possible the puppet-agent and puppet pdk packages are no longer installed in the "latest"/"standard" image. If you do require them then please use the "full" image.*
+**Important note:** *In order to make the image as small as possible the puppet-agent and puppet pdk packages are no longer installed in the "latest" image. If you do require them then please use the "full" image.*
 
 ### What is included:
 
-### `standard` / `latest`:
+### ``latest`:
 
 * puppet-lint
 * yamllint
@@ -15,7 +15,7 @@ Docker images written to aid in testing puppet environments and/or modules.
 * rubocop
 * rspec-puppet
 
-### `full`:
+### `latest-full`:
 
 This image includes all the bells and whistles of the puppet PDK in addition to the actual puppet-agent. Additionaly it includes
 
