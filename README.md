@@ -6,7 +6,7 @@ Docker images written to aid in testing puppet environments and/or modules.
 
 ### What is included:
 
-### ``latest`:
+### `latest`:
 
 * puppet-lint
 * yamllint
